@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experiment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/experiment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class = "col-xl-2 sideBar"></div>
+
+            <div class = "col-xl-10">
+                <div class="row">
+
+                    <div class="row">
+                        <div class="col header shadow">
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4"> <!--Upper Text-->
+                        <div class="col-xl-8">
+                            <div class="row">
+                                <div class="col col-xs-6 text-start fw-bolder text-uppercase">
+                                    <p class="fs-2">welcome, user</p>
+                                </div>
+                                <div class="col col-xs-6 text-end fw-bold text-uppercase">
+                                    <p class="fs-5">wed, mar 8 2023<br>12:00:00 pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="card border shadow">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-xl-3 col-6"><p class="fw-bold mt-1">Filter by: </p></div>
+                                                <div class="col-xl-3 col-6 text-start">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle dateRangeButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Daily
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                                        <li><a class="dropdown-item" href="#">Monthly</a></li>
+                                                        <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                                        <li><a class="dropdown-item" href="#">Custom Range</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-6"><p class="fw-bold mt-1">Refresh: </p></div>
+                                                <div class="col-xl-3 col-6 text-start">
+                                                    <button type="button" class="btn btn-secondary refreshButton"><i class="fa-solid fa-arrows-rotate refreshIcon"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="col-xl-8"> <!--Divides Transaction Records and it's left side-->
+                        
+                        <div class="row py-2"> <!--Triple Card Today Reports-->
+                            <div class="col-xl-4 py-2">
+                                <div class="blrCard card border shadow">
+                                    <div class="card-body">
+                                      <p class="card-title fw-bold">Total Transactions</p>
+                                      <div class="card-text">
+                                        <p class="fs-2 fw-bolder blrCardNumber">1,000,000</p>
+                                        <p class="fs-6 smallText"><small>New: 100 (<i class="increaseLogo fa-solid fa-arrow-trend-up"></i> 10%)</small></p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 py-2">
+                                <div class="blrCard card border shadow">
+                                    <div class="card-body">
+                                        <p class="card-title fw-bold">Total Merchants</p>
+                                        <div class="card-text">
+                                          <p class="fs-2 fw-bolder blrCardNumber">1,000,000</p>
+                                          <p class="fs-6 smallText"><small>New: 100 (<i class="increaseLogo fa-solid fa-arrow-trend-up"></i> 10%)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 py-2">
+                                <div class="blrCard card border shadow">
+                                    <div class="card-body">
+                                        <p class="card-title fw-bold">Total Agents</p>
+                                        <div class="card-text">
+                                          <p class="fs-2 fw-bolder blrCardNumber">1,000,000</p>
+                                          <p class="fs-6 smallText"><small>New: 100 (<i class="increaseLogo fa-solid fa-arrow-trend-up"></i> 10%)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row py-2"> <!--Daily Report Row-->
+                            <div class="col">
+        
+                                <div class="blrCard card border shadow">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="fw-bold">Volume Records</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-xl-4 col-12">
+                                                <div class="doughnutChartMerchantBox"><canvas id="doughnutChartMerchant"></canvas></div>
+                                            </div>
+                                            <div class="col-xl-4 col-12 py-2">
+                                                <ul class="list-group list-group-flush fw-bold text-start">
+                                                    <li class="list-group-item"><span class="badge text-bg-merchant1">SOBRE</span><small> : ₱ 1,005,000</small></li>
+                                                    <li class="list-group-item"><span class="badge text-bg-merchant2">AltPayNet Corp. II</span><small> : ₱ 797,000</small></li>
+                                                    <li class="list-group-item"><span class="badge text-bg-merchant3">Dummy</span><small> : ₱ 1,000,000</small></li>
+                                                    <li class="list-group-item"><span class="badge text-bg-merchant4">Test Merchant</span><small> : ₱ 415,000</small></li>
+                                                    <li class="list-group-item"><span class="badge text-bg-merchant5">SSS Merchant</span><small> : ₱ 637,000</small></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-4 col-12 py-2">
+                                                <div class="doughnutChartTotalBox"><canvas id="doughnutChartTotal"></canvas></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div> 
+        
+                    <div class="col-xl-4"> <!--Divides Transaction Records and it's left side-->
+
+                        <div class="row mt-4">
+                            
+                            <div class="col">
+                                <div class="blrCard card border shadow"> <!--Transaction Records-->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="fw-bold">Transaction Records</p>
+                                            </div>
+                                        </div>
+                                        <div class="transacBarGraphBox"><canvas id="transacBarGraph"></canvas></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+                <div class="row"> <!--Whole Method of Payment Row-->
+                    
+                    <div class="col col-lg-6 col-xl-6 mt-3">
+        
+                        <div class="blrCard card border shadow-lg">
+                            <div class="card-body">
+                    
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fw-bold">Method of Payment Used</p>
+                                    </div>
+                                </div>
+                     
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="transacBarGraphBoxY"><canvas id="transacBarGraphYaxis"></canvas></div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col col-lg-6 col-xl-6 mt-3">
+        
+                        <div class="blrCard card border shadow-lg">
+                            <div class="card-body">
+                    
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fw-bold">Payment Status List</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-6 col-12">
+                                        <ul class="list-group list paymentStatusList"> <!--PLANNING TO PUT ON LINKS-->
+                                            <li class="list-group-item"><span class="badge text-bg-success">Successful</span><small><a href="#" class="text-decoration-none text-reset"> : 54 Transactions</a></small></li>
+                                            <li class="list-group-item"><span class="badge text-bg-posted">Posted</span><small><a href="#" class="text-decoration-none text-reset"> : 20 Transactions</a></small></li>
+                                            <li class="list-group-item"><span class="badge text-bg-pending">Pending</span><small><a href="#" class="text-decoration-none text-reset"> : 26 Transactions</a></small></li>
+                                            <li class="list-group-item"><span class="badge text-bg-postingFailed">Posting Failed</span><small><a href="#" class="text-decoration-none text-reset"> : 21 Transactions</a></small></li>
+                                            <li class="list-group-item"><span class="badge text-bg-failed">Failed</span><small><a href="#" class="text-decoration-none text-reset"> : 18 Transactions</a></small></li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="col-xl-6 col-12">
+                                        <div class = "doughnutChartStatusBox"><canvas id="doughnutChartStatus"></canvas></div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+        //
+        var doughnutChartMerchantData = {
+        labels: [],
+        datasets: [
+            {
+            label: 'Volume in peso: ',
+            data: ['1005000', '797000', '1000000', '415000', '637000'],
+            backgroundColor: ['#058240', '#87C159', '#ADCACB', '#FEE3A2', '#F3C301'],
+            }]
+        };
+
+        const doughnutChartMerchant = new Chart(document.getElementById('doughnutChartMerchant'), {
+        type: 'doughnut',
+        data: doughnutChartMerchantData,
+        options: {
+            responsive: true,
+            legend: {
+            display: false
+            },
+        }
+        });
+
+        // 
+        var doughnutChartTotalData = {
+        labels: ["Current", "Total"],
+        datasets: [
+            {
+            data: [3854, 10000],
+            backgroundColor: ["#9CCF73","#ACC9CA"],
+            }]
+        };
+
+        const doughnutChartTotal = new Chart(document.getElementById('doughnutChartTotal'), {
+        type: 'doughnut',
+        data: doughnutChartTotalData,
+        options: {
+            responsive: true,
+            legend: {
+            display: false
+            },
+        }
+        });
+
+        // TRANSAC BAR DATA
+        const transacData = {
+                labels: ['US', 'RUSSIA', 'UKRAINE', 'INDIA', 'PAKISTAN'],
+                datasets: [
+                    {
+                        label: 'No. of transactions per country',
+                        data: ['50', '10', '15', '26', '50'],
+                        backgroundColor: '#39C86A',
+                        borderRadius: 5,
+                        borderWidth: 1
+                    }
+                ]
+            }
+        // TRANSAC BAR CHART
+        const transacBarGraph = document.getElementById('transacBarGraph');
+        new Chart(transacBarGraph, {
+            type: 'bar',
+            data: transacData,
+            options: {
+                maintainAspectRatio: false
+            }
+        });
+        
+        // MOP BAR GRAPH DATA
+        const mopTransacData = {
+                labels: ['VISA', 'MasterCard', 'MLhuillier Pay', 'Gcash', 'Paymaya', 'Others', 'Others', 'Others'],
+                datasets: [{
+                    axis: 'y',
+                    label: 'No. of transactions per MOP used',
+                    data: ['149', '99', '79', '65', '25', '20', '15', '10', ],
+                    fill: false,
+                    backgroundColor: '#39C86A',
+                    borderRadius: 5,
+                    borderWidth: 1
+                    }]
+            }
+        // MOP BAR GRAPH
+        const mopBarGraph = document.getElementById('transacBarGraphYaxis');
+        new Chart(mopBarGraph, {
+            type: 'bar',
+            data: mopTransacData,
+            options: {
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    xAxes: [{
+                        barThickness: 20,
+                    }]
+                }
+            }
+        });
+
+        // DOUGHNUT CHART DATA
+        const doughnutStatusData = {
+                labels: ["Successful", "Posted", "Pending", "Posting Failed", "Failed"], 
+                datasets: [{
+                data: [54, 20, 26, 21, 18],
+                backgroundColor: ['#139650', '#9CCF73', '#F6C23E', '#FEE3A2','#E74A3B']
+                }]
+            }
+        // DOUGHNUT CHART
+        const doughnutChartStatus = document.getElementById('doughnutChartStatus');
+        new Chart(doughnutChartStatus, {
+            type: 'doughnut',
+            data: doughnutStatusData,
+            options: {
+                tooltips: {
+                backgroundColor: "rgb(255,255,255)",
+                bodyFontColor: "#858796",
+                borderColor: '#dddfeb',
+                borderWidth: 2,
+                xPadding: 15,
+                yPadding: 15,
+                displayColors: false,
+                caretPadding: 10,
+                },
+                legend: {
+                display: false
+                },
+                cutoutPercentage: 80,
+            }
+        });
+        
+    </script>
+
+</body>
+</html>

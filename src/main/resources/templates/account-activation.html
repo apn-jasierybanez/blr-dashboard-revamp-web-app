@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Billeroo Account Reactivation</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: #cccccc;
+		}
+		table {
+			border-spacing: 0;
+		}
+		td {
+			padding: 0;
+		}
+		img {
+			border: 0;
+		}
+		a {
+			color: #079646;
+			font-weight: bold;
+		}
+		.wrapper {
+			width: 100%;
+			table-layout: fixed;	
+			background-color: #cccccc;
+		}
+		.webkit {
+			max-width: 600px;
+			background-color: #ffffff;
+			padding-bottom: 0;
+		}
+		.main {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 600px;
+			background-color: #ffffff;
+			border-spacing: 0;
+			font-family: Helvetica, sans-serif;
+			padding-bottom: 0;
+		}
+		.header td {
+			text-align: center;
+			padding: 20px;
+			background-image: linear-gradient(#079646,#83cb53) ;
+		}
+		.email-title {
+			color: #079646;
+			font-size: 20px;
+			text-align: center;
+			background-color: #e7f4da; 
+			padding: 80px 0px 80px;
+		}
+		.email-body p {
+			font-size: 16px;
+			padding: 100px 40px 100px 40px; 
+			text-align: justify;
+		}
+		.highlightp {
+			font-size:30px;
+			color:#53bd5b;
+			font-weight: bold;
+		}
+		.email-closing {
+			color:#079646;
+			background-color: #e7f4da;
+			padding: 10px 0px 10px;
+			text-align: right;
+			font-size: 20px;
+			font-weight: bold;
+			letter-spacing: 0px;
+		}
+		.email-footer {
+			text-align: center;
+			background-image: linear-gradient(#079646,#83cb53) ;
+		}
+		.logo{
+			padding-top: 25px;
+		}
+		.email-footer .footer-content {
+			text-align: center;
+			color: #ffffff;
+			padding-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<center class="wrapper">
+		<div class="webkit">
+			<table class="main">
+
+			<!-- Header Banner -->
+				<tr class="header">
+					<td>
+						<a th:href="${data.header.url}">
+							<img th:src="${data.header.imageUrl}" alt="logo" width="160px" />
+						</a>
+					</td>
+				</tr> 
+					
+				<tr>
+					<td>
+						<table class="email-title" width="100%">
+							<tr >
+								<td >
+									<img src="../img/check.svg" width="200px" />
+									<h1 style="padding: 20px 0 0; margin:0;">Account Reactivated</h1>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			<!--Email Message -->	
+				<tr class="email-body">
+					<td>
+						<p> <span class="highlightp">Hello Jasiery Ybanez,</span> <br><br>
+							Your merchant account, TEST JAI, as an operator
+							have been <span style="font-weight:bold">reactivated</span> in Billeroo platform.
+							If this is not you, please ignore this email or report
+							back to us.
+						</p>
+					</td>
+				</tr>
+
+				<tr class="email-closing">
+					<td>
+						<table>
+							<tr>
+								<td style="padding: 25px 0px 25px 30px">
+									<img src="../img/thank-you.svg" width="150px" />
+								</td>
+								<td style="padding: 20px 30px 0 0" width="100%">
+									<p> Thank you so much for using our services!
+										<br><br>
+										Sincerely, <br>
+										The Billeroo Team
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+		<!-- Footer Section -->
+				<tr class="email-footer" >
+					<td colspan="2">
+						<table width="100%">
+							<tr>
+								<td class="logo"><a href="https://billeroo.com"><img src="../img/billeroo-white.png" width="180px" alt="logo"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="footer-content">
+									<p>Room 905 Vicente Madrigal Building 6793<br>
+									    Ayala Ave., Makati City Philippines 1226</p>
+									<p>+632 8763 0565</p>
+									<p>support@billeroo.com</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</center>
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #5B5D69;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.sideBar {
+    background-image: linear-gradient(to bottom, #079646, #86C547);
+}
+
+.header {
+    background-image: linear-gradient(to right, #fff, #fff);
+}
+
+.blrCard {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    --bs-border-width: 0px;
+  }
+.blrCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background-image: linear-gradient(to right, rgba(8, 151, 71, 1),rgba(134, 197, 71, 1));
+  }
+
+.text-bg-success {
+    color: #fff!important;
+    background-color: #139650 !important;
+}
+.text-bg-posted {
+    color: #fff!important;
+    background-color: #9CCF73 !important;
+}
+.text-bg-pending {
+    color: #fff!important;
+    background-color: #F6C23E !important;
+}
+.text-bg-postingFailed {
+    color: #fff!important;
+    background-color: #FEE3A2 !important;
+}
+.text-bg-failed {
+    color: #fff!important;
+    background-color: #E74A3B !important;
+}
+
+.text-bg-merchant1 {
+    color: #fff!important;
+    background-color: #058240 !important;
+}
+.text-bg-merchant2 {
+    color: #fff!important;
+    background-color: #87C159 !important;
+}
+.text-bg-merchant3 {
+    color: #fff!important;
+    background-color: #ADCACB !important;
+}
+.text-bg-merchant4 {
+    color: #fff!important;
+    background-color: #FEE3A2 !important;
+}
+.text-bg-merchant5 {
+    color: #fff!important;
+    background-color: #F3C301 !important;
+}
+
+.increaseLogo{
+    color: green;
+}
+
+.dateRangeButton {
+    --bs-btn-color: #B0B1B7;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #B0B1B7;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #B0B1B7;
+    --bs-btn-hover-border-color: #B0B1B7;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #B0B1B7;
+    --bs-btn-active-border-color: #B0B1B7;
+}
+
+.refreshButton {
+    --bs-btn-color: #B0B1B7;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #B0B1B7;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #B0B1B7;
+    --bs-btn-hover-border-color: #B0B1B7;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #B0B1B7;
+    --bs-btn-active-border-color: #B0B1B7;
+}
+
+.refreshIcon {
+    color: #B0B1B7;
+}
+
+.refreshButton:hover .refreshIcon{
+    color: white;
+}
+
+.blrCardNumber{
+    margin-bottom: -5px;
+}
+
+.smallText{
+    padding-left: 5px;
+}
+
+.paymentStatusList{
+    padding-top: 10px;
+}
+
+.transacBarGraphBox{
+    height: 27.2rem;
+}
+
+.transacBarGraphBoxY{
+    height: 27.2rem;
+}
