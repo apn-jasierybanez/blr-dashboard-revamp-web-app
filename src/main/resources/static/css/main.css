@@ -1,0 +1,236 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #5B5D69;
+}
+
+body {
+    background-color: #F5F5F5!important;
+}
+
+.welcomeText{
+    font-size: 5vh;
+    font-weight: bolder;
+}
+.dateText{
+    font-size: 3vh;
+}
+#timeText{
+    text-align: center;
+}
+
+.btn-secondary {
+    color: #B0B1B7;
+    background-color: white;
+    border-color: #B0B1B7;
+}
+.refreshIcon {
+    color: #B0B1B7;
+}
+.refreshButton:hover .refreshIcon{
+    color: white;
+}
+.dateRangeText{
+    font-size: large;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.blrCardNumber{
+    font-size: xx-large;
+}
+.increaseLogo {
+    color: green;
+}
+
+a {
+    color: #5B5D69;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.blrCard {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    --bs-border-width: 0px;
+    
+  }
+.blrCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background-image: linear-gradient(to right, rgba(8, 151, 71, 1),rgba(134, 197, 71, 1));
+    box-shadow: 10px 10px 8px #888888;
+  }
+
+.transacBarGraphBoxY{
+    height: 50vh;
+}
+
+.transacBarGraphBox{
+    height: 50vh;
+}
+
+.firstCircle{
+    color: #058240;
+}
+.secondCircle{
+    color: #F3C301;
+}
+.thirdCircle{
+    color: #87C159;
+}
+.fourthCircle{
+    color: #FEE3A2;
+}
+.fifthCircle{
+    color: #ADCACB;
+}
+
+.successfulCircle{
+    color: #139650;
+}
+.postedCircle{
+    color: #9CCF73;
+}
+.pendingCircle{
+    color: #F6C23E;
+}
+.pfailedCircle{
+    color: #FEE3A2;
+}
+.failedCircle{
+    color: #E74A3B;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .doughnutChartStatusBox{
+        height: 320px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .doughnutChartStatusBox{
+        height: 320px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .doughnutChartStatusBox{
+        height: 315px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+}
+
+/* Extra-Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+    .doughnutChartStatusBox{
+        height: 380px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+}
+
+/* @media only screen and (max-width: 750px) {
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .doughnutChartStatusBox{
+        height: 320px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .doughnutChartStatusBox{
+        height: 372px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+    .col {
+        padding-bottom: 10px;
+    }
+    .totalRow{
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .doughnutChartStatusBox{
+        height: 309px!important;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .doughnutChartStatusBox{
+        height: 300px;
+        margin-left: 15%;
+        padding-bottom: 15px;
+    }
+}
+
+.doughnutChartStatusBox{
+    height: 372px;
+    margin-left: 15%;
+    padding-bottom: 15px;
+} */
